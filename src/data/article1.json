@@ -77,7 +77,7 @@
                   "cropWidth": 1984,
                   "height": 862,
                   "ratio": "1x1",
-                  "url": "https://live-production.wcms.abc-cdn.net.au/acf1095796ae3e8ee99941fdfb9aeb22?impolicy=wcms_crop_resize&cropH=1984&cropW=1984&xPos=85&yPos=0&width=862&height=862",
+                  "url": "https://live-production.wcms.abc-cdn.net.au/acf1095796ae3e8ee99941fdfb9aeb22?impolicy=wcms_crop_resize&cropH=1984&cropW=2976&xPos=0&yPos=0&width=862&height=575",
                   "width": 862,
                   "x": 85,
                   "y": 0
@@ -136,7 +136,7 @@
                   "cropWidth": 1773,
                   "height": 862,
                   "ratio": "1x1",
-                  "url": "https://live-production.wcms.abc-cdn.net.au/c043fa8a36333e48858d922f164e0ed6?impolicy=wcms_crop_resize&cropH=1773&cropW=1773&xPos=813&yPos=211&width=862&height=862",
+                  "url": "https://live-production.wcms.abc-cdn.net.au/c043fa8a36333e48858d922f164e0ed6?impolicy=wcms_crop_resize&cropH=1561&cropW=2342&xPos=618&yPos=362&width=862&height=575",
                   "width": 862,
                   "x": 813,
                   "y": 211
@@ -257,7 +257,7 @@
                   "cropWidth": 1984,
                   "height": 862,
                   "ratio": "1x1",
-                  "url": "https://live-production.wcms.abc-cdn.net.au/b858be50a7033a3a198d471aca237e69?impolicy=wcms_crop_resize&cropH=1984&cropW=1984&xPos=634&yPos=0&width=862&height=862",
+                  "url": "https://live-production.wcms.abc-cdn.net.au/b858be50a7033a3a198d471aca237e69?impolicy=wcms_crop_resize&cropH=1674&cropW=2976&xPos=0&yPos=310&width=862&height=485",
                   "width": 862,
                   "x": 634,
                   "y": 0

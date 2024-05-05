@@ -1,22 +1,29 @@
-import React from "react";
 import Article from "../components/Article/Article";
 import data from "../data/article1.json";
+import { useArticle } from "../hooks/useArticle";
+import { generateArticleItems } from "../util";
 
 const Article1 = () => {
-  console.log(data)
+  const {
+    text,
+    mediaEmbedded,
+    contributorsInfo,
+    sourceData,
+    datesInfo,
+    featuredMediaInfo,
+  } = useArticle(data);
 
-  const { _embedded, source, sourceURL, dates } = data
-  const contributors = _embedded.contributors.map(contributor => {
-    return {
-      name: contributor.names.full,
-      canonicalURL: contributor.canonicalURL,
-    }
-  })
-
-  const sourceData = { name: source, sourceURL }
-
-  console.log(contributors)
-  return <Article title={data.title} contributors={contributors} source={sourceData}>{JSON.stringify(data.text)}</Article>;
+  return (
+    <Article
+      dates={datesInfo}
+      title={data.title}
+      contributors={contributorsInfo}
+      source={sourceData}
+      featureMedia={featuredMediaInfo}
+    >
+      {generateArticleItems(text, mediaEmbedded)}
+    </Article>
+  );
 };
 
 export default Article1;

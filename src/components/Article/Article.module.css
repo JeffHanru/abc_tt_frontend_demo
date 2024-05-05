@@ -15,8 +15,8 @@
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: 900;
-  font-size: 2.25rem;
-  line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .contributors,
@@ -28,11 +28,19 @@
   font-size: .75rem;
 }
 
+.date-bottom {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+}
+
 @media (min-width: 62em) {
   .main {
     flex-basis: 0;
     flex-grow: 999;
     margin-bottom: 0;
+    border-left: 1px solid rgb(230, 230, 230);
+    border-right: 1px solid rgb(230, 230, 230);
   }
 
   .sidebar {
@@ -56,8 +64,8 @@
 }
 
 .content {
-  width: 100%;
   padding: 3rem 1rem 0 1rem;
+  margin: 0;
 }
 
 .sidebar h2 {
@@ -103,4 +111,27 @@
   letter-spacing: .03125rem;
   font-weight: 400;
   font-size: .75rem;
+}
+
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+
+  .content {
+    margin: 0 88px;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    margin: 0 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    margin: 0 88px;
+  }
 }

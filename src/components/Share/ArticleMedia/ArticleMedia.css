@@ -1,0 +1,35 @@
+.embed-media-container {
+  margin: 0 -1rem;
+}
+
+.embed-media-container-right-align {
+  margin: 0 -1rem;;
+}
+
+@media (min-width: 768px) {
+  .embed-media-container-right-align {
+    float: right;
+    margin: 0 -2rem 1.5rem 1.5rem;
+    width: 50%;
+  }
+}
+
+.feature-media {
+  width: 100%;
+}
+
+.feature-media-container {
+  margin: 0;
+}
+
+.media-caption {
+  color: rgb(100, 100, 100);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.feature-media-caption {
+  padding-left: 1rem;
+}
