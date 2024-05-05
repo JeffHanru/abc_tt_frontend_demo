@@ -1,10 +1,10 @@
-import "./IframeMedia.css";
+import "./InstagramIframeMedia.css";
 
-interface IframeMediaProps {
+interface InstagramIframeMediaProps {
   src: string;
 }
 
-export const IframeMedia = ({ src }: IframeMediaProps): JSX.Element => {
+export const InstagramIframeMedia = ({ src }: InstagramIframeMediaProps): JSX.Element => {
   return (
     <div className="wrapper">
       <iframe

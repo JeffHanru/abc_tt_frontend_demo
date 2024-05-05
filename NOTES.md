@@ -13,3 +13,17 @@
 # 3. Create shared hook
 
 # 4. Create types file
+
+# 5. create constant: for tagname
+
+# 6. add classname for extension (done)
+
+# 7. Update line height?
+
+# 8. explain component naming reason for extension (done)
+
+# 9. Chance for useMemo?
+
+# 10. add classnames props for customise
+
+# 11. List principle: 1 each file have specific purpose

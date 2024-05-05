@@ -1,0 +1,33 @@
+.teaser-container {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.teaser-title {
+  font-size: 1.125rem;
+  margin: 0 0 1rem 0;
+}
+
+.teaser-text {
+  color: rgb(48, 0, 153);
+  border-bottom: 1px solid rgb(230, 230, 230);
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.teaser-text:hover {
+  text-decoration: none;
+  border-bottom: 1px solid rgb(0, 88, 204);
+}
+
+@media (min-width: 992px) {
+  .teaser-container {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  .teaser-title {
+    font-size: 1.25rem;
+    font-weight: 00;
+  }
+}

@@ -2,7 +2,8 @@ import {
   ArticleMedia,
   ArticleText,
   ArticleTitle,
-  IframeMedia,
+  InstagramIframeMedia,
+  TeaserMedia,
 } from "../components/Share";
 import { NormalTextProps, QuoteTextProps, Text, MediaEmbedded } from "../types";
 
@@ -33,12 +34,12 @@ export const generateArticleItems = (
           const embedMedia = mediaEmbedded.find(
             (media) => media.id === element.parameters?.ref
           );
-          console.log(embedMedia);
+          // console.log(embedMedia);
           if (
             embedMedia?.externalembed &&
             embedMedia.viewType === "instagram"
           ) {
-            return <IframeMedia src={embedMedia.externalembed.url} />;
+            return <InstagramIframeMedia src={embedMedia.externalembed.url} />;
           }
           if (embedMedia && (embedMedia.docType === "ImageProxy" || embedMedia.docType === "Image")) {
             const contentText = embedMedia.byLine?.json.children[0].children
@@ -52,6 +53,15 @@ export const generateArticleItems = (
               align: element.parameters?.align,
             };
             return <ArticleMedia {...embedMediaInfo} />;
+          }
+          if(embedMedia && embedMedia.docType === "Teaser") {
+            console.log(embedMedia.synopsis?.split("\n"))
+            // const teaserText = embedMedia.teaserText?.json.children.find()
+            return <TeaserMedia 
+              title={embedMedia.title}
+              text={embedMedia.synopsis?.split("\n")[1]}
+              url={embedMedia._embedded?.mediaEmbedded[0].canonicalURL}
+            />
           }
           return null;
         }

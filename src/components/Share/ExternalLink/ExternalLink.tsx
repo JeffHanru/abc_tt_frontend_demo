@@ -1,8 +1,9 @@
 interface ExternalLinkProps {
   url: string;
   text: string;
+  classNames?: string;
 }
 
-export const ExternalLink = ({ url, text }: ExternalLinkProps): JSX.Element => {
-  return <a href={url}>{text}</a>;
+export const ExternalLink = ({ url, text, classNames }: ExternalLinkProps): JSX.Element => {
+  return <a className={classNames} href={url}>{text}</a>;
 };
