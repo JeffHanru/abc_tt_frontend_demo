@@ -27,3 +27,7 @@
 # 10. add classnames props for customise
 
 # 11. List principle: 1 each file have specific purpose
+
+# 12. centralised complicated props
+
+# 13. Mention the test strategy. breakdown the component for testing
