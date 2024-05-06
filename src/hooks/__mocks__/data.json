@@ -1,0 +1,231 @@
+{
+  "_embedded": {
+    "contributors": [
+      {
+        "canonicalURL": "https://www.abc.net.au/news/guy-williams/13494298",
+        "id": "13494298",
+        "names": {
+          "first": "Guy",
+          "full": "Guy Williams",
+          "last": "Williams"
+        },
+        "role": "author"
+      }
+    ],
+    "locations": [
+      {
+        "canonicalURL": "http://www.abc.net.au/news/topic/rockhampton-4700",
+        "id": "15910",
+        "title": "Rockhampton"
+      }
+    ],
+    "mediaEmbedded": [
+      {
+        "alt": "Chanelle Olive sits on a chair in an office. ",
+        "byLine": {
+          "json": {
+            "type": "element",
+            "tagname": "div",
+            "parameters": {
+              "xmlns": "http://www.coremedia.com/2003/richtext-1.0",
+              "xmlns:xlink": "http://www.w3.org/1999/xlink"
+            },
+            "children": [
+              {
+                "type": "element",
+                "tagname": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "content": "supplied"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "canonicalURL": "https://www.abc.net.au/news/2021-11-22/chanelle-olive-1/100635566",
+        "caption": "Chanelle Olive is an engineering manager at Energy Queensland and is eager to guide high school girls interested in becoming electrical engineers.",
+        "dates": {
+          "displayPublished": "2021-11-21T20:13:18+00:00",
+          "published": "2021-11-21T20:13:18+00:00",
+          "updated": "2021-11-21T20:13:18+00:00"
+        },
+        "docType": "ImageProxy",
+        "id": "100635566",
+        "media": {
+          "image": {
+            "primary": {
+              "complete": [
+                {
+                  "cropHeight": 1984,
+                  "cropWidth": 1984,
+                  "height": 862,
+                  "ratio": "1x1",
+                  "url": "https://live-production.wcms.abc-cdn.net.au/acf1095796ae3e8ee99941fdfb9aeb22?impolicy=wcms_crop_resize&cropH=1984&cropW=2976&xPos=0&yPos=0&width=862&height=575",
+                  "width": 862,
+                  "x": 85,
+                  "y": 0
+                }
+              ]
+            }
+          }
+        },
+        "source": "ABC Capricornia",
+        "sourceURL": "https://www.abc.net.au/radio/capricornia/",
+        "title": "Chanelle Olive 1",
+        "titleAlt": {
+          "lg": "Chanelle Olive 1",
+          "md": "Chanelle Olive 1",
+          "sm": "Chanelle Olive 1"
+        }
+      }
+    ],
+    "mediaFeatured": [
+      {
+        "alt": "Chanelle Olive standing in front of a sub-station",
+        "byLine": {
+          "json": {
+            "type": "element",
+            "tagname": "div",
+            "parameters": {
+              "xmlns": "http://www.coremedia.com/2003/richtext-1.0",
+              "xmlns:xlink": "http://www.w3.org/1999/xlink"
+            },
+            "children": [
+              {
+                "type": "element",
+                "tagname": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "content": "Supplied"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "canonicalURL": "https://www.abc.net.au/news/2021-11-22/chanelle-olive-2/100635568",
+        "caption": "Chanelle Olive is an engineering manager at Energy Queensland.",
+        "dates": {
+          "displayPublished": "2021-11-21T20:13:18+00:00",
+          "published": "2021-11-21T20:13:18+00:00",
+          "updated": "2021-11-21T20:13:18+00:00"
+        },
+        "docType": "ImageProxy",
+        "id": "100635568",
+        "media": {
+          "image": {
+            "primary": {
+              "complete": [
+                {
+                  "cropHeight": 1984,
+                  "cropWidth": 1984,
+                  "height": 862,
+                  "ratio": "1x1",
+                  "url": "https://live-production.wcms.abc-cdn.net.au/b858be50a7033a3a198d471aca237e69?impolicy=wcms_crop_resize&cropH=1674&cropW=2976&xPos=0&yPos=310&width=862&height=485",
+                  "width": 862,
+                  "x": 634,
+                  "y": 0
+                }
+              ]
+            }
+          }
+        },
+        "source": "ABC Capricornia",
+        "sourceURL": "https://www.abc.net.au/radio/capricornia/",
+        "title": "Chanelle Olive 2",
+        "titleAlt": {
+          "lg": "Chanelle Olive 2",
+          "md": "Chanelle Olive 2",
+          "sm": "Chanelle Olive 2"
+        }
+      }
+    ],
+    "subjects": [
+      {
+        "canonicalURL": "http://www.abc.net.au/news/topic/engineering",
+        "id": "2450",
+        "title": "Engineering"
+      },
+      {
+        "canonicalURL": "http://www.abc.net.au/news/topic/education-industry",
+        "id": "874",
+        "title": "Education Industry"
+      },
+      {
+        "canonicalURL": "http://www.abc.net.au/news/topic/women-in-agriculture",
+        "id": "2244",
+        "title": "Women In Agriculture"
+      }
+    ]
+  },
+  "canonicalURL": "https://www.abc.net.au/news/2021-11-22/women-in-engineering-mentoring/100635010",
+  "dates": {
+    "displayPublished": "2021-11-21T20:13:18+00:00",
+    "displayUpdated": "2021-11-21T23:34:23+00:00",
+    "published": "2021-11-21T20:13:18+00:00",
+    "updated": "2021-11-21T23:34:23+00:00"
+  },
+  "docType": "Article",
+  "embeddedMedia": [
+    {
+      "docType": "ImageProxy",
+      "id": "100635566"
+    }
+  ],
+  "featuredMedia": [
+    {
+      "docType": "ImageProxy",
+      "id": "100635568"
+    }
+  ],
+  "id": "100635010",
+  "keywords": [
+    "engineering",
+    "women",
+    "trade",
+    "mentor",
+    "uniqyou",
+    "goodnews",
+    "rural",
+    "training",
+    "university"
+  ],
+  "source": "ABC Capricornia",
+  "sourceURL": "https://www.abc.net.au/radio/capricornia/",
+  "synopsis": "Chanelle Olive was just like many teenage girls, unsure what path to take as she was graduating from high school. A chance meeting changed everything for her.",
+  "synopsisAlt": {
+    "lg": "Chanelle Olive was just like many teenage girls, unsure what path to take as she was graduating from high school. A chance meeting changed everything for her.",
+    "sm": "Chance meeting with opens door to male-dominated industry."
+  },
+  "text": {
+    "json": {
+      "type": "element",
+      "tagname": "div",
+      "parameters": {
+        "xmlns": "http://www.coremedia.com/2003/richtext-1.0",
+        "xmlns:xlink": "http://www.w3.org/1999/xlink"
+      },
+      "children": [
+        {
+          "type": "element",
+          "tagname": "p",
+          "children": [
+            {
+              "type": "text",
+              "content": "Women make up only 15 per cent of engineers with lack of support for professional development and gender discrimination still seen as barriers for women in engineering."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "title": "'You can still be who you are and do that job': Electrical engineer lights a path for high school girls to follow",
+  "titleAlt": {
+    "lg": "'You can still be who you are and do that job': Electrical engineer lights a path for high school girls to follow",
+    "md": "Meet the women lighting a path in male-dominated industries",
+    "sm": "Women in male-dominated industries eager to help next generation"
+  }
+}

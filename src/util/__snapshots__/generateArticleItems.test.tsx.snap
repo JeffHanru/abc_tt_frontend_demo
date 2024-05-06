@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generateArticleItems renders no match media content as expected 1`] = `<React.Fragment />`;
+
+exports[`generateArticleItems renders non exist type data as expected 1`] = `
+<React.Fragment>
+  otherwise default
+</React.Fragment>
+`;
+
+exports[`generateArticleItems renders the ArticleText content as expected 1`] = `
+<React.Fragment>
+  <ArticleText>
+    Women make up only 15 per cent of engineers with lack of support for professional development and gender discrimination still seen as barriers for women in engineering.
+  </ArticleText>
+</React.Fragment>
+`;
+
+exports[`generateArticleItems renders the QuoteText content as expected 1`] = `
+<React.Fragment>
+  <ArticleText
+    variant="quote"
+  >
+    "I've even been lucky enough to work at a site that had Spanish coins on it."
+  </ArticleText>
+</React.Fragment>
+`;
+
+exports[`generateArticleItems renders the image media content as expected 1`] = `
+<React.Fragment>
+  <ArticleMedia
+    align="embed"
+    caption="Maddy McAllister manages the collections at Townsville's Museum of Tropical Queensland."
+    src="https://live-production.wcms.abc-cdn.net.au/89d0a84c3dbef91e007ee42ed029935e?impolicy=wcms_crop_resize&cropH=3333&cropW=5000&xPos=0&yPos=0&width=862&height=575"
+    suppliedText="ABC North Queensland: Zilla Gordon"
+  />
+</React.Fragment>
+`;
+
+exports[`generateArticleItems renders the instagram media content as expected 1`] = `
+<React.Fragment>
+  <InstagramIframeMedia
+    src="https://www.instagram.com/p/CPDPd6jDJQK/"
+  />
+</React.Fragment>
+`;
+
+exports[`generateArticleItems renders the teaser media content as expected 1`] = `
+<React.Fragment>
+  <TeaserMedia
+    text="Tell us your location and find more local ABC News and information"
+    title="Find more local news"
+    url="https://www.abc.net.au/local/"
+  />
+</React.Fragment>
+`;

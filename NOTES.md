@@ -10,19 +10,9 @@
 
 # 2. Follow existing pattern for contributors, date and etc
 
-# 3. Create shared hook
-
-# 4. Create types file
-
 # 5. create constant: for tagname
 
-# 6. add classname for extension (done)
-
-# 7. Update line height?
-
 # 8. explain component naming reason for extension (done)
-
-# 9. Chance for useMemo?
 
 # 10. add classnames props for customise
 
@@ -31,3 +21,9 @@
 # 12. centralised complicated props
 
 # 13. Mention the test strategy. breakdown the component for testing
+
+# 14 Clarificaiton. Avoid Article1 and Article2 component.
+
+# 15 create a formatter to extract iframe link
+
+# 16 Please document your code appropriately.

@@ -7,6 +7,7 @@ import {
 } from "../components/Share";
 import { NormalTextProps, QuoteTextProps, Text, MediaEmbedded } from "../types";
 
+// This function is used to return related component based on the tag name value
 export const generateArticleItems = (
   text: Text,
   mediaEmbedded: MediaEmbedded[]
@@ -34,12 +35,14 @@ export const generateArticleItems = (
           const embedMedia = mediaEmbedded.find(
             (media) => media.id === element.parameters?.ref
           );
+
           if (
             embedMedia?.externalembed &&
             embedMedia.viewType === "instagram"
           ) {
             return <InstagramIframeMedia key={index} src={embedMedia.externalembed.url} />;
           }
+
           if (embedMedia && (embedMedia.docType === "ImageProxy" || embedMedia.docType === "Image")) {
             const contentText = embedMedia.byLine?.json.children[0].children
               ? embedMedia.byLine.json.children[0].children[0].content
@@ -53,6 +56,7 @@ export const generateArticleItems = (
             };
             return <ArticleMedia key={index} {...embedMediaInfo} />;
           }
+
           if(embedMedia && embedMedia.docType === "Teaser") {
             return <TeaserMedia 
               key={index}
