@@ -73,7 +73,7 @@ export const generateArticleItems = (
 
           return <ArticleTitle key={index}>{componentInfo.content}</ArticleTitle>;
         }
-        return "otherwise default";
+        return null;
       })}
     </>
   );

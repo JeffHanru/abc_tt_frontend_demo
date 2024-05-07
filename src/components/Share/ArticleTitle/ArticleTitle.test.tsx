@@ -8,6 +8,5 @@ describe('ArticleTitle', () => {
     expect(articleTitleElement).toBeInTheDocument();
     expect(articleTitleElement).toHaveClass("article-title");
     expect(articleTitleElement).toHaveTextContent("This is title");
-
   });
 });

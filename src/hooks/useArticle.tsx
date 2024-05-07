@@ -1,5 +1,6 @@
 import { DataProp } from "../types";
 
+// Processing the data before consumed, only expose required data.
 export const useArticle = (data: DataProp) => {
   const { _embedded, source, sourceURL, dates, text, featuredMedia } = data;
   const { contributors, mediaFeatured, mediaEmbedded } = _embedded;
