@@ -2,11 +2,7 @@
 
 exports[`generateArticleItems renders no match media content as expected 1`] = `<React.Fragment />`;
 
-exports[`generateArticleItems renders non exist type data as expected 1`] = `
-<React.Fragment>
-  otherwise default
-</React.Fragment>
-`;
+exports[`generateArticleItems renders non exist type data as expected 1`] = `<React.Fragment />`;
 
 exports[`generateArticleItems renders the ArticleText content as expected 1`] = `
 <React.Fragment>
