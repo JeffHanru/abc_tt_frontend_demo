@@ -4,8 +4,9 @@ Thanks to ABC News for providing this technical test for me. In this document, I
 
 ## Before start the app
 
-Make sure the node version is below v18. The one I used is v16.14.0
+1. Make sure the node version is below v18. The one I used is v16.14.0
 
+2. To run test, type `npm test` in the terminal, if it shows no test in last commit, type `a` in the terminal
 
 ## Development principle
 1. As README file requeset, avoid using over engineered solution.
@@ -18,17 +19,17 @@ Make sure the node version is below v18. The one I used is v16.14.0
 
 ## Task 1:  Article layout + basic components
 
-The first step is to read the actual page and see if relevant information such as contributor, dates,article text, image and embed link are available. After go through the json response file, I can be confident that the required data are all provided.
+The first step is to read the actual page and paylaod to see if relevant information such as contributor, dates, article text, image and embed link are available. After go through the json response file, It can be confirmed that the required data are all provided.
 
-It is clearly that the layout of two pages are very similiar. Ideally, a shared component should be create to handle both `Artile 1` and `Artile 2`, and then load the data based on the url path. But since the requirement mentioned keep it simple when it comes to importing the JSON file. I skipped this step. I n commercial project, this step should not be skipped.
+It is clearly that the layout of two pages are very similiar. Ideally, a shared component should be create to handle both `Artile 1` and `Artile 2`, and then load the data based on the url path. But since the requirement mentioned keep it simple when it comes to importing the JSON file. I skipped this step. In commercial project, this step should not be skipped.
 
-To render the article content organized, it is necessary create a shared ui component folder/library. When iterating the list of text.json, we can just choose the corresponding component based on the combination of payload.
+To render the article content organizedly, it is necessary create a shared ui component folder/library. When iterating the list of `text.json.children` from payload, corresponding component can be used based on the condition check made by `tagname`, `doctype` and etc.
 
-I crreated a hook called `useArticle` to centralise the logic of processing data before it is consumed by the component. This can improve the readability of component and also expose the only needed variable based on the requirement.
+I crreated a hook called `useArticle` to centralise the logic of processing data before it is consumed by the component. This can improve the readability of component and also expose the only needed variable.
 
-I created a funciton `generateArticleItems` to centralise the logic of rendering article element. Both the text data and supported media data should be passed in. Based on the tagname, the component type can identified. If tagname is `a`, a further check for `viewType` and `docType` should be implement to know if it is for third party embed content, image media or teaser media. If nothing matched, return null in the end to avoid app breaks.
+I created a funciton `generateArticleItems` to centralise the logic of rendering article elements. Both the text data and supported media data should be passed in. Based on the `tagname`, the component type can identified. If tagname is `a`, a further check for `viewType` and `docType` should be implement to know if it is for third party embed content, image media or teaser media. If nothing matched, return null in the end to avoid app breaks.
 
-The page also contain the information such as contributors and dates, so they should be covered as well. The initial article 
+The page also contain the information such as contributors and dates, so they should be covered as well.
 
 ## 2. Task 2: Adding Third-party embeds
 
@@ -44,6 +45,6 @@ Since this is a demo project, I render the third party embed as `<span>Instagram
 - Given the requirement to add an additional third-party embed, could this be done in a few simple steps? How would you explain to a developer how to add a YouTube Video embed.
 
 Answer: As I mentioned in task 2 section. A file pattern has been established to handle scalling up of third party embeds. Take adding youtube video embed as example, it can be done in following steps
-  - Create a relevant component named as `YoutubeIframeMedia` in `IframeMedia` folder following existing naming pattern
+  - Create a relevant component named as `YoutubeIframeMedia` in `IframeMedia` folder
   - export the component in index.ts file
   - In `generateArticleItems`, based on the condition`embedMedia.viewType === "youtube"`, return the target iframe component.
