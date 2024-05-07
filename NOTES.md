@@ -8,10 +8,10 @@ Thanks to ABC News for providing this technical test for me. In this document, I
 
 2. To run test, type `npm test` in the terminal, if it shows no test in last commit, type `a` in the terminal
 
-## Development principle
-1. As README file requeset, avoid using over engineered solution.
+## Development principles
+1. As README file requesed, avoid using over engineered solution.
 
-2. To optimise the readability, each file should always have only one specific purpose. For example, rendering the component, handling the data process, store complicated types or initiating the request (which is not covered in the demo project). By doing so, the reader can be very clearly about the intention of each file.
+2. To optimise the readability, each file should always have only one specific purpose. For example, rendering the component, handling the data process, storing complicated types or initiating the request (which is not covered in the demo project). By doing so, the reader can be very clearly about the intention of each file.
 
 3. To optimise the testability, each ui and foundamental components should have their own test files.
 
@@ -46,5 +46,5 @@ Since this is a demo project, I render the third party embed as `<span>Instagram
 
 Answer: As I mentioned in task 2 section. A file pattern has been established to handle scalling up of third party embeds. Take adding youtube video embed as example, it can be done in following steps
   - Create a relevant component named as `YoutubeIframeMedia` in `IframeMedia` folder
-  - export the component in index.ts file
+  - Export the component in index.ts file
   - In `generateArticleItems`, based on the condition`embedMedia.viewType === "youtube"`, return the target iframe component.
